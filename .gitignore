@@ -11,3 +11,5 @@ build/
 Pet-Shop-Backend/node_modules/
 Pet-Shop-Backend/.env
 Pet-Shop-Backend/.env.*
+*.zip
+Pet-Shop-Backend/database.sqlite
