@@ -1,0 +1,13 @@
+# Frontend
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+.env
+.env.*
+
+# Backend
+Pet-Shop-Backend/node_modules/
+Pet-Shop-Backend/.env
+Pet-Shop-Backend/.env.*

@@ -1,0 +1,124 @@
+.wrap {
+  width: 100%;
+  box-sizing: border-box;    
+  padding: 0 40px;           
+  margin-bottom: 80px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; /* чтобы дети шли сверху вниз */
+  gap: 40px
+}
+
+.header { margin-bottom: 20px; }
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;                     /* чтобы не было лишнего отступа */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+}
+
+.crumb {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #888;
+  transition: 0.2s;
+}
+
+.crumb:hover {
+  background: #f2f2f2;
+}
+
+.crumbActive {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 16px;
+  color: #282828;
+  font-weight: 500;
+}
+
+.line {
+  width: 16px;
+  height: 1px;
+  background: #ddd;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+  color: #282828;
+}
+
+.meta { margin: 8px 0 0 0; opacity: 0.8; font-size: 14px; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 28px;
+  margin-top: 60px;
+}
+
+.controlGroup { display: flex; align-items: center; gap: 10px; }
+.label { font-size: 20px; opacity: 0.85; }
+
+.priceInputs { display: flex; gap: 8px; }
+.priceInputs input {
+  width: 90px;
+  padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.priceInputs input:focus {
+  border-color: #c7d2fe;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.checkbox input { transform: translateY(1px); }
+
+.select {
+  padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+  gap: 32px;                 /* как в sales picks */
+  justify-items: stretch;      /* НЕ растягиваем карточку, она 316px */
+  align-items: start;
+}
+
+.gridSkeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+  gap: 16px;
+}
+
+
+.loading { padding: 24px 0; font-size: 16px; }
+.empty { padding: 24px 0; }
+.hint { margin-top: 8px; opacity: 0.8; }

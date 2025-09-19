@@ -1,0 +1,58 @@
+.wrap{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1440 / 600;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay{
+    position: absolute;
+    inset: 0;
+    background: black(40%)
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 40px;
+    max-width: 1360px;
+  
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .title {
+    margin: 0;
+    font-weight: 700;             /* Bold как в макете */
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    color: #fff;
+  }
+  
+  /* Кнопка */
+  .btn {
+    display: inline-block;
+    background: #0D6EFD;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;        /* SemiBold */
+    font-size: 20px;
+    line-height: 130%;
+    padding: 16px 56px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  

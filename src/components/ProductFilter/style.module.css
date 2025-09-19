@@ -1,0 +1,32 @@
+.controls{
+    display:flex; flex-wrap:wrap; align-items:center;
+    gap:20px 28px;
+  }
+  
+  .group{ display:flex; align-items:center; gap:10px; }
+  
+  .label{ font-size:20px; opacity:.85; }
+  
+  .priceInputs{ display:flex; gap:8px; }
+  .priceInputs input{
+    width:90px; padding:6px 8px;
+    border:1px solid #e5e7eb; border-radius:8px;
+    font-size:14px; outline:none;
+  }
+  .priceInputs input:focus{
+    border-color:#c7d2fe; box-shadow:0 0 0 3px rgba(59,130,246,.12);
+  }
+  
+  .checkbox{
+    display:inline-flex; align-items:center; gap:10px;
+    user-select:none; cursor:pointer; font-size:14px;
+  }
+  .checkbox input{
+    width:18px; height:18px; transform:scale(1.35); /* крупнее чекбокс */
+  }
+  
+  .select{
+    padding:6px 8px; border:1px solid #e5e7eb; border-radius:8px;
+    font-size:14px; background:#fff;
+  }
+  

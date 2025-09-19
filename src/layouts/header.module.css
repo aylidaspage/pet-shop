@@ -1,0 +1,68 @@
+.header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.inner {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  flex: 1;                  /* занимает промежуток между логотипом и корзиной */
+  display: flex;
+  justify-content: center;  /* центр внутри этого промежутка */
+  gap: 32px;                /* как в фигме */
+}
+
+.nav a { 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #282828;
+  text-decoration: none;
+}
+
+/* Корзина */
+.cartLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartIcon {
+  width: 36px;   /* можно подогнать */
+  height: 36px;
+  display: block;
+}
+
+.cartBadge {
+  position: absolute;
+  top: 2px;      /* смещение над корзиной */
+  left: -10px;    /* чуть влево, как на макете */
+  
+  min-width: 26px;
+  height: 26px;
+  padding: 0 6px; 
+  border-radius: 50%;
+
+  background: #0D50FF;
+  color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2px 6px rgba(13, 80, 255, 0.35);
+  pointer-events: none; /* не мешает клику по корзине */
+}

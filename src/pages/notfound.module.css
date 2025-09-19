@@ -1,0 +1,60 @@
+.wrapper {
+    min-height: 80vh;
+    padding: 48px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .digit {
+    font-size: clamp(120px, 20vw, 240px);
+    font-weight: 800;
+    color: #165DFF;
+    line-height: 1;
+  }
+  
+  .pets {
+    width: clamp(90px, 14vw, 170px);
+    height: auto;
+    transform: translateY(8px);
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .title {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 800;
+  }
+  
+  .desc {
+    max-width: 640px;
+    color: #8c8c8c;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 12px;
+    background: #165DFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .08s ease, box-shadow .2s ease;
+  }
+  
+  .btn:hover { box-shadow: 0 8px 24px rgba(22,93,255,.25); }
+  .btn:active { transform: translateY(1px); }
+  

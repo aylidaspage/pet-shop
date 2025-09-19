@@ -1,0 +1,95 @@
+/* секция */
+.wrap {
+    display: grid;
+    gap: 40px;
+    margin-top: 80px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+  }
+  
+  .title{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+  
+  .cardsRow{
+    display: flex;
+    align-items: stretch;
+    gap: 32px;                 /* ← между колонками ровно 20px */
+  }
+  
+  .col{
+    display: flex;
+    flex-direction: column; /* столбцом */
+    gap: 32px;
+  }
+  
+  .colLeft{  flex: 1.5; }
+  .colRight{ width: 548px; }
+  
+  .card{
+    height: 150px;                          /* как просила */
+    background: #F6F7F9;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+  
+  .label{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+  }
+  
+  .valueBig{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;                        /* крупный, как в макете */
+    line-height: 1.2;
+    color: #282828;
+  }
+  
+  .socials{
+    display: flex;
+    gap: 19px;
+    align-items: center;
+  }
+  
+  .socials img{
+    width: 38px;
+    height: 38px;
+    display: block;
+  }
+  
+  /* карта */
+  .mapWrap{
+    width: 100%;
+    height: 420px;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f6f7f9;
+  }
+  .mapWrap iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  @media (max-width: 1400px){
+    .wrap{ padding: 0 24px; }
+  }
+  @media (max-width: 1360px){
+    .cardsRow{ flex-direction: column; }
+    .colLeft, .colRight{ width: 100%; }
+    .card{ height: auto; }
+    .valueBig{ font-size: 28px; }
+  }
+  

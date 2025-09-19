@@ -1,0 +1,24 @@
+.wrap{
+    display:grid;
+    gap:40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding:0 40px;
+  }
+  
+  .breadcrumbs{ display:flex; align-items:center; gap:0; font:500 16px "Montserrat",sans-serif; color:#888; }
+  .crumb{ padding:6px 12px; border:1px solid #ddd; border-radius:6px; color:#888; text-decoration:none; }
+  .crumb:hover{ background:#f2f2f2; }
+  .crumbActive{ padding:6px 12px; border:1px solid #ddd; border-radius:6px; background:#fff; color:#282828; }
+  .line{ width:16px; height:1px; background:#ddd; }
+  
+  .title{ margin:0; font:700; font-size: 64px; color: #282828;}
+  
+  .state{ padding:24px 0; font-size:16px; }
+  
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(316px,1fr));
+    gap:32px;
+  }
+  

@@ -1,0 +1,48 @@
+.wrap {
+  display: grid;
+  gap: 40px;
+
+  /* Добавляем отступы */
+  margin-top: 80px;        /* сверху от Promo */
+  padding: 0 40px;         /* слева и справа */
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.title {
+  margin: 0;                 /* ← убираем оранжевое */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.right {
+  display: flex;
+  align-items: center;       /* кнопка и линия выровнены по центру */
+  flex: 1;                   /* занимает всё оставшееся место */
+  margin-top: 10px;
+}
+
+
+.all {
+  padding: 8px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  text-decoration: none;
+}
+
+.line {
+  flex: 1;                /* растягиваем на всё свободное место */
+  height: 1px;            /* тонкая линия */
+  background: #ddd;       /* серый цвет как в макете */
+  margin-left: 32px;
+}

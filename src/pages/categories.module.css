@@ -1,0 +1,100 @@
+.wrap {
+    display: grid;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0 40px; /* как на главной */
+  }
+  
+  .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;                     /* чтобы не было лишнего отступа */
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+  }
+  
+  .crumb {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #888;
+    transition: 0.2s;
+  }
+  
+  .crumb:hover {
+    background: #f2f2f2;
+  }
+  
+  .crumbActive {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 16px;
+    color: #282828;
+    font-weight: 500;
+  }
+  /* хедер секции */
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* от заголовка до линии */
+  }
+  
+  .title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-top: 10px; /* как в превью */
+  }
+  
+  .line {
+    width: 16px;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .gridSkeleton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px; /* совпадает с CategoriesGrid */
+  }
+  
+  .skeleton {
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(90deg, #eee, #f6f6f6, #eee);
+    background-size: 200% 100%;
+    animation: pulse 1.2s linear infinite;
+  }
+  
+  @keyframes pulse {
+    from { background-position: 0 0; }
+    to   { background-position: 200% 0; }
+  }
+  
+  /* адаптив по желанию */
+  @media (max-width: 1200px) {
+    .gridSkeleton { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .gridSkeleton { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .gridSkeleton { grid-template-columns: 1fr; }
+  }
+  
